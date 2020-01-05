@@ -9,15 +9,15 @@ if (mysqli_connect_errno()) {
 $sql = "SELECT * FROM members;";
 $result = mysqli_query($connect, $sql);
 
-/* associative and numeric array */
+/* fetch associative array */
 $n = 1;
-while ($row = mysqli_fetch_array($result, MYSQLI_BOTH)) {
-    echo "$row[Uid], $row[Id], $row[Password], $row[Gender], $row[Tel], $row[Birthday], $row[Email]<br>";
+while ($row = mysqli_fetch_row($result)) {
+    echo "$row[0], $row[1], $row[2], $row[3], $row[4], $row[5], $row[6]<br>";
 }
 
 /* free result set */
 mysqli_free_result($result);
 
-/* close connection */
+/* close connection*/
 mysqli_close($connect);
 ?>
