@@ -1,8 +1,14 @@
 body {
-    margin: 0;
+    margin: 50px;
     padding: 0;
     font-family: sans-serif;
-    background: #191919;
+    background: #95a5a6;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .box {
@@ -13,12 +19,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
-
-.box h1 {
-    color: white;
-    text-transform: uppercase;
-    font-weight: 500;
 }
 
 .box input[type="text"], .box input[type="password"] {
@@ -69,4 +69,13 @@ table {
     border: 1px;
     width: 800px;
     
+}
+
+.error {
+    display: block;
+    color: #f00;
+}
+
+#agreeMsg {
+    display: none;
 }

@@ -7,57 +7,115 @@
         <script src="../lib/jQuery/jquery-3.4.1.js"></script>
     </head>
     <body>
-        <form name="register_form" method="POST" action="register.html">
-            <table>
-                <tr>
-                    <td>* ID :</td>
-                    <td><input type="text" name="" placeholder="User ID"></td>
-                </tr>
-                <tr>
-                    <td>* Password :</td>
-                    <td><input type="password" name="" placeholder="Password"></td>
-                </tr>
-                <tr>
-                    <td>* Password Check :</td>
-                    <td><input type="password" name="" placeholder="Password Again"></td>
-                </tr>
-                
-                <tr>
-                    <td>Gender :</td>
-                    <td><input type="radio" name="gender" value="M" checked>Male
-                        <input type="radio" name="gender" value="F">Female
-                    </td>
-                </tr>
-                <tr>
-                    <td>Tel :</td>
-                    <td><select name="phone1">
+        <h1>Register</h1>
+        <form name="register_form" method="POST" action="../register.php">
+
+            <div class="register_row register_id">
+                <h3 class="register_title">User ID</h3>
+                <span class="form_box">
+                    <input type="text" name="id" maxlength="20">
+                </span>
+            </div>
+
+            <div class="register_row register_pswd">
+                <h3 class="register_title">Password</h3>
+                <span class="form_box">
+                    <input type="password" name="pswd1" maxlength="20">
+                </span>
+                <h3 class="register_title">Password Check</h3>
+                <span class="form_box">
+                    <input type="password" name="pswd2" maxlength="20">
+                </span>
+            </div>
+     
+            <div class="register_row register_gender">
+                <h3 class="register_title">Gender</h3>
+                <span class="form_box">
+                    <input type="radio" name="gender" value="M" checked>Male
+                    <input type="radio" name="gender" value="F">Female
+                </span>
+            </div>
+
+            <div class="register_row register_tel">
+                <h3 class="register_title">Phone</h3>
+                <div class="tel1">
+                    <span class="form_box">
+                        <select id="phone1">
                             <option>Options</option>
                             <option value="010">010</option>
-                            <option value="02">02</option>
-                        </select>-
-                        <input type="text" size="4" name="phone2" maxlength="4">-
-                        <input type="text" size="4" name="phone3" maxlength="4">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Birthday</td>
-                    <td><input type="date" name=""></td>
-                </tr>
-                <tr>
-                    <td>Email</td>
-                    <td><input type="email" name="" placeholder="your email"></td>
-                    <td><input type="button" name="" value="Send"></td>
-                </tr>
+                            <option value="02">02</option>                   
+                        </select>
+                    </span>
+                </div>
+                <div class="tel2">
+                    <span class="form_box">
+                        <input type="text" id="phone2" maxlength="4">
+                    </span>
+                </div>
+                <div class="tel3">
+                    <span class="form_box">
+                        <input type="text" id="phone3" maxlength="4">
+                    </span>
+                </div>
+            </div>
+
+            <div class="register_row register_birthday">
+                <h3 class="register_title">Birthday</h3>
+                <div class="bir_warp">
+                    <div class="bir_yy">
+                        <span class="form_box">
+                            <input type="text" id="yy" placeholder="YYYY" maxlength="4">
+                        </span>
+                    </div>
+                    <div class="bir_mm">
+                        <span class="form_box">
+                            <select id="mm">
+                                <option>Month.</option>
+                                <option value="01">1</option>
+                                <option value="02">2</option>
+                                <option value="03">3</option>
+                                <option value="04">4</option>
+                                <option value="05">5</option>
+                                <option value="06">6</option>
+                                <option value="07">7</option>
+                                <option value="08">8</option>
+                                <option value="09">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div class="bir_dd">
+                        <span class="form_box">
+                            <input type="text" id="dd" placeholder="Day." maxlength="2">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="register_row register_email">
+                <h3 class="register_title">Email</h3>
+                <span class="form_box">
+                    <input type="text" id="email" name="email" placeholder="your email" maxlength="100">
+                </span>
                 <!-- slide up the pop-up of send correctly and check -->
-                
-                <tr>
-                    <td>Authentication Number</td>
-                    <td><input type="text" name="" placeholder="Auth. Number"></td>
-                    <td><input type="button" name="" value="Check"></td>
-                </tr>
-            </table>
-    
-            <input type="submit" name="" value="Submit">
+                <a href="#" id="btnSend" role="button">
+                    <span class="btn_email_verify">Send</span>
+                </a>
+                <span class="form_box" id="authNoBox">
+                    <input type="text" id="authNo" name="authNo" placeholder="Authentication Number" maxlength="4">
+                </span>
+            </div>
+
+            <span id="agreeMsg">Invalid informations are included.</span>
+
+            <div class="register_submit">
+                <button type="button" id="btnRegister">
+                    <span>Submit</span>
+                </button>
+            </div>
+
         </form>
     </body>
 </html>
