@@ -8,8 +8,9 @@
     </head>
     <body>
         <h1>Register</h1>
-        <form name="register_form" method="POST" action="../register.php">
+        <form class="register_form" method="POST" action="../register.php">
 
+            <!-- id -->
             <div class="register_row register_id">
                 <h3 class="register_title">User ID</h3>
                 <span class="form_box">
@@ -17,6 +18,7 @@
                 </span>
             </div>
 
+            <!-- pswd1, pswd2 -->
             <div class="register_row register_pswd">
                 <h3 class="register_title">Password</h3>
                 <span class="form_box">
@@ -28,6 +30,7 @@
                 </span>
             </div>
      
+            <!-- gender -->
             <div class="register_row register_gender">
                 <h3 class="register_title">Gender</h3>
                 <span class="form_box">
@@ -36,11 +39,12 @@
                 </span>
             </div>
 
+            <!-- phone1, phone2, phone3 -->
             <div class="register_row register_tel">
                 <h3 class="register_title">Phone</h3>
                 <div class="tel1">
                     <span class="form_box">
-                        <select id="phone1">
+                        <select name="phone1">
                             <option>Options</option>
                             <option value="010">010</option>
                             <option value="02">02</option>                   
@@ -49,27 +53,28 @@
                 </div>
                 <div class="tel2">
                     <span class="form_box">
-                        <input type="text" id="phone2" maxlength="4">
+                        <input type="text" name="phone2" maxlength="4">
                     </span>
                 </div>
                 <div class="tel3">
                     <span class="form_box">
-                        <input type="text" id="phone3" maxlength="4">
+                        <input type="text" name="phone3" maxlength="4">
                     </span>
                 </div>
             </div>
 
+            <!-- yy, mm, dd -->
             <div class="register_row register_birthday">
                 <h3 class="register_title">Birthday</h3>
                 <div class="bir_warp">
                     <div class="bir_yy">
                         <span class="form_box">
-                            <input type="text" id="yy" placeholder="YYYY" maxlength="4">
+                            <input type="text" name="yy" placeholder="YYYY" maxlength="4">
                         </span>
                     </div>
                     <div class="bir_mm">
                         <span class="form_box">
-                            <select id="mm">
+                            <select name="mm">
                                 <option>Month.</option>
                                 <option value="01">1</option>
                                 <option value="02">2</option>
@@ -88,12 +93,14 @@
                     </div>
                     <div class="bir_dd">
                         <span class="form_box">
-                            <input type="text" id="dd" placeholder="Day." maxlength="2">
+                            <input type="text" name="dd" placeholder="Day." maxlength="2">
                         </span>
                     </div>
                 </div>
             </div>
         
+            <!-- TODO : hava to make one more form to 'Send'? -->
+            <!-- email, authNo -->
             <div class="register_row register_email">
                 <h3 class="register_title">Email</h3>
                 <span class="form_box">
