@@ -40,17 +40,17 @@
 
 #### Table of Contents
 
-1. [Login](#index.html)
+1. [Login](#index)
 
-2. [Register](#register.html)
+2. [Register](#register)
 
-3. [Forget Password](#forget_password.html)
+3. [Forget Password](#forget_password)
 
-4. [Main](#main.html)
+4. [Main](#main)
 
 
 
-### index.html
+## index
 
 param1. username
 
@@ -71,7 +71,7 @@ link2. @{/signup}
 
 
 
-### register.html
+## register
 
 1. 아이디
 
@@ -104,7 +104,7 @@ link2. @{/signup}
 
 
 
-### forget_password.html
+## forget_password.html
 
 1. 아이디
 2. 이메일 (인증번호 발송)
@@ -119,7 +119,7 @@ link2. @{/signup}
 
 
 
-### main.html
+## main
 
 1. 사진 (고양이로 넣자)
 2. 바로밑에 hi, <username>
