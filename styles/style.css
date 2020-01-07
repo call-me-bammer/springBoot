@@ -2,7 +2,7 @@ body {
     margin: 50px;
     padding: 0;
     font-family: sans-serif;
-    background: #95a5a6;
+    background: #2d3436;
 }
 
 .box h1 {
@@ -30,13 +30,12 @@ body {
 }
 
 .box input[type="text"], .box input[type="password"] {
-    border: 0;
     background: none;
     display: block;
     margin: 20px auto;
     text-align: center;
     border: 2px solid #3498db;
-    padding: 14px 20px;
+    padding: 12px 20px;
     width: 200px;
     outline: none;
     color: white;
@@ -51,26 +50,25 @@ body {
 
 .index_menu {
     font-size: 13px;
-    border: 0;
     text-decoration: none;
+
     background: none;
-    margin: 20px auto;
+    display: inline;
+    margin: 1px;
     text-align: center;
+
     border: 2px solid #2ecc71;
-    padding: 14px 30px;
+    padding: 12px 28px;
+
     outline: none;
     color: white;
-    border-radius: 24px;
+    border-radius: 20px;
     transition: 0.25s;
     cursor: pointer;
 }
 
 .index_menu:hover {
     background: #2ecc71;
-}
-
-form {
-
 }
 
 table {
@@ -86,4 +84,30 @@ table {
 
 #agreeMsg {
     display: none;
+}
+
+.register_form {
+    color: white;
+}
+
+.tel {
+    display: inline;
+}
+
+.bir_yy, .bir_mm, .bir_dd {
+    display: inline;
+}
+
+#authNoBox {
+    display: block;
+}
+
+.register_submit {
+    padding: 10px;
+}
+
+#btnSend {
+    color: white;
+    text-decoration: none;
+    outline: none;
 }
