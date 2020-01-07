@@ -1,10 +1,22 @@
 ## Project :: Front-end 'Login Form' For SpringBoot
 
+### Log
+
+12.31 - 페이지 구조 및 요구사항 받음
+
+1.5 - 회원가입 페이지 sample_register.html 받음
+
+1.7 - 로그인 페이지 관련 추가 구현 스택 및 로그인 페이지 sample_index.html 받음
+
+
+
 ### Tree
 
 ~~~
 ├── README.md
 ├── index.html
+├── sample_index.html
+├── sample_register.html
 ├── lib
 │   └── jQuery
 │       ├── jquery-3.4.1.js
@@ -28,22 +40,34 @@
 
 #### Table of Contents
 
-1. [Login](~/index.html)
+1. [Login](#~/index.html)
 
-2. [Register](~/templates/register.html)
+2. [Register](#~/templates/register.html)
 
-3. [Forget Password](~/templates/forget_password.html)
+3. [Forget Password](#~/templates/forget_password.html)
 
-4. [Main](~/templates/main.html)
+4. [Main](#~/templates/main.html)
 
 
 
 ### ~/index.html
 
-1. 아이디
-2. 비번
+param1. username
 
-로그인 / 비번찾기 / 회원가입
+param2. password
+
+* If clicks **LOGIN** `h1` element, submit to @{/login}.
+
+  ~~~javascript
+  // ~/index.html's line 21.
+  $("h1").click(function() {
+  	$("form").submit();
+  });
+  ~~~
+
+link1. @{/forgotPassword}
+
+link2. @{/signup}
 
 
 
