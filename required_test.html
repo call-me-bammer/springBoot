@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+    <title>HTML input tag - required attribute</title>
+    <script src="./lib/jQuery/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+	<form action="/examples/media/action_target.php" method="get">
+		이름 : <input type="text" name="st_name" required><br>
+        학과 : <input type="text" name="department"><br>
+        <h3>제-출</h3>
+	</form>
+
+    <script>
+    $(document).ready(function() {
+        $("h3").click(function () {
+            $("form").submit();
+        });
+    });
+    </script>
+
+</body>
+</html>

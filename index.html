@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" dir = "ltr">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="UTF-8">
         <title>Spring :: Login</title>
@@ -8,20 +8,22 @@
     </head>
     <body>
 
-    <form class="box" action="login.php" method="post">
+    <form class="box" method="post" action="login.php">
         <h1>Login</h1>
-        <input type="text" size="16" maxlength="16" name="uid" placeholder="User ID">
-        <input type="password" size="16" maxlength="16" name="" placeholder="Password">
-
-        <input type="submit" class="index_menu" name="" value="Login">
-        <!-- TODO: align design -->
+        <input type="text" size="20" maxlength="20" name="id" placeholder="User ID">
+        <input type="password" size="20" maxlength="20" name="pswd" placeholder="Password">
         <a class="index_menu" href="./templates/forget_password.html">Forget Password?</a>
         <a class="index_menu" href="./templates/register.html">Register</a>
+        <input type="submit">
     </form>
 
 
     <!-- TODO: fix with RegExp -->
     <script>
+        $("h1").click(function() {
+            $("form").submit();
+        });
+
         $(".box").keypress(function(event) {
 
             var regex = new RegExp("^[a-zA-Z0-9]");
@@ -31,19 +33,6 @@
             }
             event.preventDefault();
             return false;
-            /*
-            var ew = event.which;
-            // 0 to 9
-            if(48 <= ew && ew <= 57)
-                return true;
-            // A to Z
-            if(65 <= ew && ew <= 90)
-                return true;
-            // a to z
-            if(97 <= ew && ew <= 122)
-                return true;
-            return false;
-            */
         });
     </script>
 

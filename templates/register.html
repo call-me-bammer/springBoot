@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en-US" dir = "ltr">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
     <head>
-        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+        <meta charset="UTF-8">
         <title>Spring :: Register</title>
         <link rel="stylesheet" href="../styles/style.css">
         <script src="../lib/jQuery/jquery-3.4.1.js"></script>
+        <script src="../scripts/script.js"></script>
     </head>
     <body>
         <h1>Register</h1>
+        <hr>
         <form class="register_form" method="POST" action="../register.php">
 
             <!-- id -->
             <div class="register_row register_id">
                 <h3 class="register_title">User ID</h3>
                 <span class="form_box">
-                    <input type="text" name="id" maxlength="20">
+                    <input type="text" name="id" maxlength="20" required>
                 </span>
             </div>
 
@@ -118,9 +120,7 @@
             <span id="agreeMsg">Invalid informations are included.</span>
 
             <div class="register_submit">
-                <button type="button" id="btnRegister">
-                    <span>Submit</span>
-                </button>
+                <input type="submit" value="Submit">
             </div>
 
         </form>

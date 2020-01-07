@@ -5,10 +5,18 @@ body {
     background: #95a5a6;
 }
 
-h1 {
+.box h1 {
     color: white;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
+    width: 105px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.box h1:hover {
+    color: #2ecc71;
 }
 
 .box {
@@ -28,7 +36,7 @@ h1 {
     margin: 20px auto;
     text-align: center;
     border: 2px solid #3498db;
-    padding: 14px 10px;
+    padding: 14px 20px;
     width: 200px;
     outline: none;
     color: white;
