@@ -104,7 +104,7 @@ link2. @{/signup}
 
 
 
-## forget_password.html
+## forget_password
 
 1. 아이디
 2. 이메일 (인증번호 발송)
