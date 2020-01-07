@@ -56,6 +56,8 @@ param1. username
 
 param2. password
 
+* limits `maxlength="20"`.
+
 * If clicks **LOGIN** `h1` element, submit to @{/login}.
 
   ~~~javascript

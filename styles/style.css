@@ -1,8 +1,43 @@
 body {
-    margin: 50px;
-    padding: 0;
+    padding: 50px;
     font-family: sans-serif;
     background: #2d3436;
+}
+
+img {
+    margin: 20px auto;
+    width: 200px;
+    
+}
+
+hr {
+    color: #636e72;
+}
+
+p {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 35px;
+    width: 1000px;
+    margin: 20px auto;
+    transition: 0.4s;
+    text-align: center;
+}
+
+p:hover {
+    color: #74b9ff;
+}
+
+/* class:: index.html:: .box, .index_menu */
+.box {
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .box h1 {
@@ -17,16 +52,6 @@ body {
 
 .box h1:hover {
     color: #2ecc71;
-}
-
-.box {
-    width: 500px;
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 .box input[type="email"], .box input[type="password"] {
@@ -51,6 +76,8 @@ body {
 .index_menu {
     font-size: 13px;
     text-decoration: none;
+    position: relative;
+    top: 10px;
 
     background: none;
     display: inline;
@@ -71,12 +98,55 @@ body {
     background: #2ecc71;
 }
 
-table {
-    border: 1px;
-    width: 800px;
-    
+/* class:: main.html:: .logout_btn, .profile_btn */
+.logout_btn {
+    font-size: 13px;
+    text-decoration: none;
+
+    background: none;
+    display: inline;
+    margin: 1px;
+    text-align: center;
+
+    border: 2px solid #ff7675;
+    padding: 12px 28px;
+
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    transition: 0.25s;
+    cursor: pointer;
 }
 
+.logout_btn:hover {
+    background: #ff7675;
+}
+
+.profile_btn {
+    font-size: 13px;
+    text-decoration: none;
+
+    background: none;
+    display: inline;
+    margin: 1px;
+    text-align: center;
+
+    border: 2px solid #ff7675;
+    padding: 12px 28px;
+
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.profile_btn:hover {
+    background: #ff7675;
+}
+
+
+/* class:: register.html:: .error,  */
 .error {
     display: block;
     color: #f00;
@@ -87,8 +157,90 @@ table {
 }
 
 .register_form {
-    color: white;
+    position: absolute;
+    width: 550px;
+    height: 900px;
+    padding: 20px;
+
+    left: 25%;
+    color: #bdc3c7;
+    text-align: center;
 }
+
+.form_box {
+    position: relative;
+    width: 200px;
+    height: 30px;
+    bottom: 10px;
+    padding: 5px;
+}
+
+
+.form_box input[type="text"], .form_box input[type="password"] {
+    padding: 5px 5px;
+}
+
+select {
+    position: relative;
+    width: 85px;
+    padding: 3px;
+}
+
+.tel_box {
+    position: relative;
+    bottom: 5px;
+}
+
+.tel_box input[type="text"] {
+    width: 85px;
+    height: 20px;
+    text-align: center;
+}
+
+.bir_box {
+    position: relative;
+    bottom: 5px;
+}
+
+.bir_box input[type="text"] {
+    width: 85px;
+    height: 20px;
+    text-align: center;
+}
+
+.register_row {
+    
+}
+
+.register_title {
+    font-size: 20px;
+}
+#id_title {
+    position: relative;
+    right: 45px;
+}
+#pswd_title {
+    position: relative;
+    right: 38px;
+}
+#pswd_check_title {
+    position: relative;
+    right: 7px;
+}
+/*
+#gender_title {
+    position: relative;
+    right: 45px;
+}
+#phone_title, #email_title {
+    position: relative;
+    right: 50px;
+}
+#bir_title {
+    position: relative;
+    right: 40px;
+}
+*/
 
 .tel {
     display: inline;
@@ -110,4 +262,8 @@ table {
     color: white;
     text-decoration: none;
     outline: none;
+}
+
+.register_email {
+    height: 110px;
 }
