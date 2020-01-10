@@ -12,6 +12,7 @@
         <form class="register_form" th:action="@{/signup}" th:object="${memberVO}" method="post">
             <h1>Register</h1>
             <hr>
+            <input type ="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
 
             <!-- TODO : hava to make one more form to 'Send'? -->
             <!-- email, authNo -->
