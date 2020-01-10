@@ -1,5 +1,5 @@
 body {
-    padding: 50px;
+    
     font-family: sans-serif;
     background: #2d3436;
 }
@@ -159,10 +159,10 @@ p:hover {
 .register_form {
     position: absolute;
     width: 550px;
-    height: 900px;
-    padding: 20px;
+    height: 700px;
+    top: 10%;
 
-    left: 25%;
+    left: 35%;
     color: #bdc3c7;
     text-align: center;
 }
@@ -292,4 +292,23 @@ input[type="button"] {
 /* confirmStatus */
 #confirmStatus {
     height: 50px;
+}
+
+#statusFrame {
+    position: absolute;
+    text-align: center;
+    width: 95%;
+    top: 90%;
+
+    padding: 30px;
+    display: none;
+    border: 1px solid #000;
+}
+
+.getGrey {
+    background: #95a5a6;
+}
+
+.getRed {
+    background: #ff7675;
 }
