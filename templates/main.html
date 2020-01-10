@@ -8,10 +8,9 @@
     </head>
     <body>
         <img src="../statics/images/ttagji.jpg" alt="No Image">
-        <p>Hi, ${username}</p>
+        <p>Hi, $_POST['username']!</p>
 
-        <input type="button" name="" value="Logout">
-        <input type="button" name="" value="Edit Profile">
-        <!-- do we need to additional 'modification page'? -->
+        <a class="logout_btn" th:href="@{/login}">Logout</a>
+        <a class="profile_btn" th:href="@{/EditProfile}">Profile</a>
     </body>
 </html>
