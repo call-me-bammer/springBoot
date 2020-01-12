@@ -175,6 +175,7 @@ p:hover {
 }
 
 .form_box {
+    
     position: relative;
     width: 200px;
     height: 30px;
@@ -183,7 +184,16 @@ p:hover {
 }
 
 
+input:focus {
+    color: grey;
+}
+
 .form_box input[type="text"], .form_box input[type="email"], .form_box input[type="password"], .form_box input[type="tel"] {
+    background: transparent;
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid green;
+    color: grey;
     padding: 5px 5px;
 }
 
