@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hompee - 주소 검색</title>
+    <link rel="stylesheet" href="../styles/style.css"> <!-- "css/style.css" -->
+</head>
+    <body>
+        <input type="hidden" id="hid_Key" value="devU01TX0FVVEgyMDIwMDExMjEzNDAxODEwOTM4MDY="/>
+        <form class="address_form" id="formSearchAddress">
+            <input class="search_input" type="text" id="inputSearchAddress" placeholder="주소 검색"/>
+            <input class="form_btn" type="submit" id="btnSearch" value="검색"/>
+        </form>
+        <div id="searchArea" class="search_area">
+            <a href="javascript:SetOpenerValue('우편번호1', '도로명주소1');">
+                <span class="zipCode">우편번호1</span> <br/> 도로명주소1 <br/> 옛날주소1
+            </a>
+            <hr>
+            <a href="javascript:SetOpenerValue('우편번호2', '도로명주소2');">
+                <span class="zipCode">우편번호2</span> <br/> 도로명주소2 <br/> 옛날주소2
+            </a>
+            <hr>
+            <a href="javascript:SetOpenerValue('우편번호3', '도로명주소3');">
+                <span class="zipCode">우편번호3</span> <br/> 도로명주소3 <br/> 옛날주소3
+            </a>
+            <hr>
+            <a href="javascript:SetOpenerValue('우편번호4', '도로명주소4');">
+                <span class="zipCode">우편번호4</span> <br/> 도로명주소4 <br/> 옛날주소4
+            </a>
+            <hr>
+            <a href="javascript:SetOpenerValue('우편번호5', '도로명주소5');">
+                <span class="zipCode">우편번호1</span> <br/> 도로명주소5 <br/> 옛날주소5
+            </a>
+            <hr>
+        </div>
+        <div id="div_paginate" class="paginate">
+            <!-- images/first.png -->
+            <a class="first" href='javascript:Search_Post_API(1);'><img src="../statics/images/first.png"/></a>
+            <a class="prev" href="javascript:Search_Post_API(1);"><img src="../statics/images/prev.png"/></a>
+            
+            <a class="page_number" href="#"><strong>1</strong></a>
+            <a class="page_number" href="javascript:Search_Post_API(2);">2</a>
+            <a class="page_number" href="javascript:Search_Post_API(3);">3</a>
+            <a class="page_number" href="javascript:Search_Post_API(4);">4</a>
+            <a class="page_number" href="javascript:Search_Post_API(5);">5</a>
+            
+            <a class="next" href="javascript:Search_Post_API(6);"><img src="../statics/images/next.png"/></a>
+            <a class="last" href="javascript:Search_Post_API(6);"><img src="../statics/images/last.png"/></a>
+        </div>
+    </body>
+</html>
